@@ -1,9 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .navbar a {
     color: #fff !important;
     transition: 0.8s all;
@@ -22,6 +16,12 @@
 .dropdown-item {
     background-color: #000;
 }
+
+.navbar-toggler{
+    /* border: 1px solid rgba(14, 105, 144, 0.712)!important; */
+    background-color: #F8B47A;
+    color: #fff;
+  }
 
 .header {
     position: fixed;
@@ -50,10 +50,11 @@
     color: #000 !important;
 }
 
-.dropdown-item a:hover{
-    background-color: #fff!important;
-    color: #000!important;
+.dropdown-item a:hover {
+    background-color: #fff !important;
+    color: #000 !important;
 }
+
 .f-logo {
     height: 40px;
     width: 180px;
@@ -141,7 +142,7 @@ footer {
 
 .home-bg {
     background-image: url(../images/home-bg1.png);
-    height: 988px;
+    height: 992px;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -167,7 +168,7 @@ footer {
     /* color: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(233, 203, 148, 0) 100%); */
 }
 
-.home-bg img {
+/* .home-bg img {
     height: 30px;
     width: 30px;
     border-radius: 50% #000;
@@ -175,7 +176,21 @@ footer {
     left: 440px;
     top: 467px;
     background-color: #F8B47A !important;
-}
+} */
+
+/* .home-bg .icon{
+    position: absolute;
+    left:25.4%;
+    top: 1px;
+    border-radius: 100%;
+    width: 30px;
+    height: 28px;
+    gap: 0px;
+    opacity: 0px;
+    color: #fff;
+    border: 1px solid;
+    background-color:#F8B47A;
+} */
 
 .travelticket span {
     color: #F8B47A;
@@ -205,15 +220,16 @@ footer {
     height: 35px;
 }
 
-.travelticket h1::selection{
+.travelticket h1::selection {
     background-color: #000;
     color: #fff;
 }
 
-.travelticket span::selection{
+.travelticket span::selection {
     background-color: #000;
     color: #fff;
 }
+
 .travelticket h6 {
     font-size: 20px;
     /* margin-left: 10px */
@@ -329,35 +345,50 @@ footer {
     color: #7D7D7D;
 }
 
-.service {
+/* .service {
     background-image: url(../images/service-bg.png);
     height: 900px;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+} */
+
+.service-bg{
+    background-image: url(../images/contact-bg.png);
+    width: 100%;
+    height:70vh;
+    opacity: 0.87px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.service h1 {
+.service-bg h1 {
     margin-top: 11.5% !important;
     font-weight: bold;
     font-family: Roboto Serif;
     font-size: 45px;
 }
 
-.service p {
+.service-bg p {
     margin-top: 2%;
     font-size: 22px;
     font-family: Roboto Serif;
 }
 
-.service .btn {
+.service-bg .btn {
     height: 40px;
     width: 130px;
-    background-color: #F8B47A;
+    background-color:;
     color: #000;
     border: none;
     border-radius: 10px;
+    transition: 0.8s all linear;
+}
+
+.service-bg .btn:hover{
+    background-color: #000;
+    color: #fff;
 }
 
 .our-service img {
@@ -457,7 +488,7 @@ footer {
 
 .login img {
     height: 50px;
-    width: 160px;
+    width: 170px;
     margin: auto 20%;
 }
 
@@ -502,7 +533,8 @@ footer {
     color: #F8B47A;
     font-size: 35px;
 }
-.about-con h2::selection{
+
+.about-con h2::selection {
     background-color: #000;
     color: #fff;
 }
@@ -531,14 +563,14 @@ footer {
 }
 
 .mission h3::selection {
-   background-color: #000;
-   color: #fff;
+    background-color: #000;
+    color: #fff;
 }
 
 .mission p::selection {
     background-color: #000;
     color: #fff;
- }
+}
 
 .ready {
     background-color: #F0B18C;
@@ -553,10 +585,11 @@ footer {
     color: #000;
 }
 
-.ready h2::selection{
+.ready h2::selection {
     background-color: #000;
     color: #fff;
 }
+
 .ready p {
     font-size: 20px;
     color: #000;
@@ -591,8 +624,20 @@ footer {
 }
 
 .s-form ::placeholder {
-    padding: 10px;
-    /* content: "f207"; */
+    padding: 7px;
+}
+
+.s-form .icon {
+    position: absolute;
+    left: 29%;
+    top: 467px;
+    width: 28px;
+    height: 28px;
+    gap: 0px;
+    opacity: 0px;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #F0B18C;
 }
 
 .s-form .btn {
@@ -675,3 +720,13 @@ footer {
     background-color: #000 !important;
     color: #fff !important;
 }
+.modal-dialog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.navbar-toggler-icon{
+    color: #F8B47A!important;
+}
+

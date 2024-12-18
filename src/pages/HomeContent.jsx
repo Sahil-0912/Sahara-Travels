@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react'
 import twoway from '../assets/images/twoway.png'
+import { GoArrowSwitch } from 'react-icons/go'
 
 const HomeContent = () => {
   return (
-    <div>
+    <>
       <section className="home-bg">
         <div className="container text-center">
           <div className="row">
@@ -14,21 +15,19 @@ const HomeContent = () => {
                 <div class="container">
                   <div class="row">
                     <div class="col-xl-3 col-lg-4 col-md-6">
-                      {/* <label for="from" class="text-center"><i class="fa-solid fa-bus"></i> From</label> */}
-                      <input type="text" class="form-control h-75 w-100 icon-input" placeholder="From"  />
-                      <img src={twoway} className='bg-warning' />
+                      <input type="text" class="form-control h-75 w-100 icon-input" placeholder="From" />
+                      <div className="icon">
+                        <GoArrowSwitch />
+                      </div>
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6">
-                      {/* <label for="from" class="text-center">To</label> */}
                       <input type="text" class="form-control  h-75" placeholder="To" />
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6">
-                      {/* <label for="from" class="text-center">Date</label> */}
                       <input type="date" id="date" className='form-control' />
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6 bus">
                       <button class="btn btn-outline-light h-100 mt-2 w-50">Search Buses</button>
-                      {/* <input type="text" className='form-control' placeholder='search buses' /> */}
                     </div>
                   </div>
                 </div>
@@ -37,7 +36,7 @@ const HomeContent = () => {
           </div>
         </div>
       </section>
-    </div>
+    </>
   )
 }
 
