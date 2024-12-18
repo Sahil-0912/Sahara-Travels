@@ -1,7 +1,7 @@
 import React from 'react'
 import About from './About'
-import AboutContent from './AboutCOntent'
 import OurMissionVission from './OurMissionVission'
+import AboutContent from './AboutContent'
 
 const AboutUs = () => {
   return (
